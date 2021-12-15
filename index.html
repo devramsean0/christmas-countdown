@@ -3,9 +3,10 @@
     <head>
         <title>Christmas Countdown</title>
         <link rel="stylesheet" href="/css/css.css" />
-        <script src="/js/christmas-day.js"></script>
-        <script src="/js/christmas-eve.js"></script>
-        <script src="/js/new-years-eve.js"></script>
+        <script src="js/christmas-day.js"></script>
+        <script src="js/christmas-eve.js"></script>
+        <script src="js/new-years-eve.js"></script>
+        <script src="js/map.js"></script>
         <script>
             christmasday()
             christmaseve()
@@ -16,11 +17,11 @@
         <noscript>Javascript is required for this site!</noscript>
         <section id="map">
             <h2>Choose a calendar</h2>
-            <button onclick="christmaseveshow()">Christmas Eve</button>
+            <button onclick="show('christmaseve')">Christmas Eve</button>
             <br />
-            <button onclick="christmasdayshow()">Christmas Day</button>
+            <button onclick="show('christmasday')">Christmas Day</button>
             <br />
-            <button onclick="newyearseveshow()">New Years Eve</button>
+            <button onclick="show('newyearseve')">New Years Eve</button>
         </section>
         <!-- Christmas Eve Countdown -->
         <div class="countup" id="christmaseve" style="visibility: hidden;">
